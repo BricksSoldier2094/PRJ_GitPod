@@ -1,0 +1,47 @@
+git branch projeto_1
+
+git checkout projeto_1
+
+git add .
+
+git commit -m "adds MeusDados.txt"
+
+git push --set-upstream origin projeto_1
+
+git checkout master
+
+git merge projeto_1
+
+git branch projeto_2
+
+git add .
+
+git commit -m "modify MeusDados.txt on branch projeto_2"
+
+git push --set-upstream origin projeto_2
+
+git checkout master
+
+git merge projeto_2
+
+git checkout projeto_2
+
+git revert f43729409a7bfcba2ced43953a165d56aacb2561
+
+git checkout master
+
+git branch projeto_3
+
+git add .
+
+git commit -m "modify MeusDados.txt on branch projeto_3"
+
+git add .
+
+git commit -m "adds MeuCurso.txt"
+
+git push --set-upstream origin projeto_3
+
+git checkout master
+
+git merge projeto_3
